@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(124, 184, 204);
+}
+#container, header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(114, 130, 136);
+    height: 6rem;
+}
+header{
+    justify-content: space-between;
+}
+header > span{
+    /*justify-self: last baseline;*/
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+#pokebola{
+    /*position: absolute;*/
+    width: 6rem;
+    /*top: 0px;
+    left: 40%;*/
+}
+#contenedor{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 27%;
+    left: 25%;
+}
+#card > span {
+    position: relative;
+    left: 10%;
+    width: 50%;
+}
+#pokeimg{
+    margin-left: 1.5rem;
+    width: 9rem;
+}
+#pokedex{
+    width: 50%;
+}
+#relativo{
+    position: relative;
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
+/*input{
+    width: 15rem;
+    margin-bottom: 1rem;
+}*/
+/*#pokebola{
+    display: none;
+}*/
+
+@media screen and (max-width: 1024px) { 
+    #pokedex{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
+    #card{
+        left: 2%;
+        top: 30%;
+    }
+    #close{
+        right: 0;
+    }
+}
+@media screen and (max-width: 768px) { 
+    #card{
+        font-size: smaller;
+        left: 0%;
+        top: 25%;
+    }
+    #pokeimg{
+        margin-left: 0;
+    }
+}
